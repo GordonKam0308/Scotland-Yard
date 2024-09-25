@@ -20,7 +20,7 @@ There are two versions of this game
 
 cw-model is the compulsory part of our coursework.
 In [ScotlandYard/cw-model/src/main/scotlandyard/model](cw-model/src/main/scotlandyard/model))
-there are classes, we have to implement MyGameStateFactory and MyModelFactory class, we have used Principle of OOP that learnt in lectures
+there are classes, we have to implement MyGameStateFactory and MyModelFactory class, we have used Principle of OOP that we have learnt in lectures
 
 cw-ai is the open-end part of our coursework
 In [ScotlandYard/cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai](cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai)
