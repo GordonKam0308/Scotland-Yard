@@ -1,9 +1,9 @@
 # Scotland-Yard
 
-This is the coursework that I have done in my Year One Group Project in Object-Oriented Programming(OOP) in University of Bristol in 2023-2024.
-This coursework is done by **Gordon Wai Hin Kam** and **Leung Ka Ho (Ivan)**.
-The skeleton code is provided by University of Bristol Computer Science Department
-ScotlandYard is written in Java
+This is the coursework that I have done in my Year One Group Project in Object-Oriented Programming(OOP) in **University of Bristol** in **2023-2024**. <br />
+This coursework is done by **Gordon Wai Hin Kam** and **Leung Ka Ho (Ivan)**. <br />
+The skeleton code is provided by **University of Bristol Computer Science Department** <br />
+ScotlandYard is written in **Java** <br />
 To see our thoughts after implement the functionality of this game please go to [report.pdf](report.pdf)
 
 ## How do I run this game 
