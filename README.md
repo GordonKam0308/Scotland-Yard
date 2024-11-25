@@ -1,29 +1,61 @@
 # Scotland-Yard
 
-This is the coursework that I have done in my Year One Group Project in Object-Oriented Programming(OOP) in **University of Bristol** in **2023-2024**. <br />
-This coursework is done by **Gordon Wai Hin Kam** and **Leung Ka Ho (Ivan)**. <br />
-The skeleton code is provided by **University of Bristol Computer Science Department** <br />
-ScotlandYard is written in **Java** <br />
-To see our thoughts after implement the functionality of this game please go to [report.pdf](report.pdf)
+## Prerequisite
+Please install the following environment / library:
 
-## How do I run this game 
+- [Java](https://www.java.com/download/ie_manual.jsp)
+- [Maven](https://maven.apache.org/)
 
-To Run this game please install [Apache Maven](https://maven.apache.org/), since this project use Maven as build system 
+## Introduction
 
-There are two versions of this game
+This game is contributed by [**Gordon Wai Hin Kam**](https://github.com/li23179) and [**Ivan (Leung Ka Ho)**](https://github.com/nm22031)
 
-1. To run **cw-model** [Main.java](cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/Main.java), either go on [ScotlandYard/cw-model](cw-model) (where the [pom.xml](cw-model/pom.xml) file is located) and type `./mvnw clean compile ` on CLI **OR** Open [cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/Main.java](cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/Main.java) in any IDE and press RUN on Main class
+Scotland Yard is a board game in which a team of players controlling different detectives cooperate to track down a player controlling a criminal as they move around a board representing the streets of London. 
 
-2. To run **cw-ai** [Main.java](cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/Main.java), either go on [ScotlandYard/cw-ai](cw-ai) (where the [pom.xml](cw-ai/pom.xml) file is located) and type `./mvnw clean compile` on CLI **OR** Open [cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/Main.java](cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/Main.java) in any IDE and press RUN on Main class
+It was first published in 1983 and is named after Scotland Yard which is the headquarters of London's Metropolitan Police Service in real-life.
 
-## Description of Folder Structure
+## Setup
 
-**cw-model** is the **compulsory** part of our coursework.
-In [ScotlandYard/cw-model/src/main/scotlandyard/model](cw-model/src/main/scotlandyard/model)
-there are classes, we have to implement MyGameStateFactory and MyModelFactory class, we have used Principle of OOP that we have learnt in lectures
+There are **two** roles in this game *detectives* and *Mr.X*. One player is assigned to *Mr.X* and the rest of it are *detectives*.
 
-**cw-ai** is the **open-end** part of our coursework
-In [ScotlandYard/cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai](cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai)
-We have to design some algorithms to simulate AI to play the game and also need to enhance the performance, we have implemented [Alpha-beta prunning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) and [Game Tree](https://en.wikipedia.org/wiki/Game_tree) these decision making algorithms in order to imitate an actual AI control pieces in the game
+### Components
+- **GameBoard**: A map of London featuring 199 stations connected by colored lines (taxi, bus, and underground).
+- **Tickets**: Used for movement; there are taxi tickets, bus tickets, underground tickets, and special secret tickets for Mr. X.
+- **Log Book**: Mr. X uses this to secretly record his moves.
 
-For more details, please visit our [report](report.pdf)
+### Movement Rules
+
+- **Mr. X’s Moves**: Mr. X writes down his moves in the log book and shows only the type of ticket he uses (keeping his exact location secret). Every **3rd**, **8th**, **13th**, and **18th** move, Mr. X must reveal his exact location.
+
+- **Detective Moves**: Detectives announce their moves aloud and give up a ticket of the corresponding type each time they move. They cannot move if they run out of applicable tickets.
+
+## How do I run this game
+
+### cw-model
+
+This is a default model of Scotland Yard. You can enter number of players and detective to play the game locally.
+
+To run the game, run the following command on CLI:
+```
+cd cw-model/src/main/java/uk/ac/bris/cs/scotlandyard
+./mvnw clean compile
+```
+
+### cw-ai
+
+This advanced model of Scotland Yard allows you to specify the number of AIs that participate as players in the game.
+
+To run the game, run the following command on CLI:
+```
+cd cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai
+./mvnw clean compile
+```
+
+#### Test for cw-ai
+
+To run the all tests, run the following command on CLI:
+```
+./mvnw clean test
+```
+### Implemention
+Please visit our [Report](/Scotland-Yard/report.pdf).
