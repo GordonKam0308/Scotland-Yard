@@ -41,6 +41,13 @@ cd cw-model/src/main/java/uk/ac/bris/cs/scotlandyard
 ./mvnw clean compile
 ```
 
+#### Test for cw-model
+
+To run the all tests, run the following command on CLI:
+```
+./mvnw clean test
+```
+
 ### cw-ai
 
 This advanced model of Scotland Yard allows you to specify the number of AIs that participate as players in the game.
