@@ -10,7 +10,7 @@ Please install the following environment / library:
 
 This game is contributed by [**Gordon Wai Hin Kam**](https://github.com/li23179) and [**Ivan (Leung Ka Ho)**](https://github.com/nm22031)
 
-Scotland Yard is a board game in which a team of players controlling different detectives cooperate to track down a player controlling a criminal as they move around a board representing the streets of London. 
+[**Scotland Yard**](https://en.wikipedia.org/wiki/Scotland_Yard_(board_game)) is a board game in which a team of players controlling different detectives cooperate to track down a player controlling a criminal as they move around a board representing the streets of London. 
 
 It was first published in 1983 and is named after Scotland Yard which is the headquarters of London's Metropolitan Police Service in real-life.
 
