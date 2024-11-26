@@ -57,5 +57,5 @@ To run the all tests, run the following command on CLI:
 ```
 ./mvnw clean test
 ```
-### Implemention
+### Implementation
 Please visit our [Report](/Scotland-Yard/report.pdf).
