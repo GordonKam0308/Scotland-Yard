@@ -66,3 +66,5 @@ To run the all tests, run the following command on CLI:
 ```
 ### Implementation
 Please visit our [Report](/Scotland-Yard/report.pdf).
+___
+&copy; 2024 Gordon Wai Hin Kam &amp; Ivan Leung Ka Ho. All rights reserved. 
